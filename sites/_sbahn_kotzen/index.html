@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S-Bahnlife</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <div class="button-container">
+     
+      <div class="button-container3">
+        <a href="../../index.html" class="buttons" id="home-button">
+          <img src="images/back.png">
+        </a>
+      </div>
+
+      <div class="button-container2">
+        <a href="#" class="buttons" id="custom-button">
+          <img src="images/shuffle.png" alt="Custom Image">
+        </a>
+      </div>
+      
+    </div>
+
+    <audio id="backgroundAudio" loop>
+      <source src="audio/ubahn-berlin.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    
+
+    <div class="bahn-wrapper">
+      <div class="bgbahn-container"> 
+        <img class=bgbahn src="images/sbahn_animated_final.png">
+        <img id="gifactivate" onmouseover="this.style.cursor='pointer'" onclick="chngimg()" src="images/vomitesta_web.png">
+      </div>
+    <div>
+      <img id="gifactivate1" src="images/el_fumador.png">
+    </div>
+  </div>
+
+	<script src="js/main.js"></script>
+  </body>
+</html>

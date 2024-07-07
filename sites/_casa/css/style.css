@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  #gifactivate {
+    position: absolute;
+    width: 17vw;
+    height: auto;
+    left: 75vw;
+    top: 40vh;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #gifactivate1 {
+    position: absolute;
+    width: 16vw;
+    height: auto;
+    left: 48vw;
+    top: 43vh;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .casa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire container, maintaining its aspect ratio */
+  }
+
+  /* RANDOMIZE BUTTON */
+
+.button-container {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  bottom: 0vh;
+  width: 100vw;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  width: 3vw;
+  height: auto;
+}
+
+.buttons img {
+  max-width: 100%; /* Ensure the image doesn't overflow its container */
+}
+
+/* Initial mix-blend-mode */
+.buttons {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+/* Change mix-blend-mode on hover */
+.buttons:hover {
+  mix-blend-mode: difference; /* Change to your desired blend mode */
+  opacity: 1;
+}
+
+#home-button{
+  filter: drop-shadow(10px -10px 30px rgb(165, 127, 255));
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+#home-button:hover{
+  filter: drop-shadow(-30px 30px 30px rgb(225, 255, 127));
+}
+
+#custom-button {
+  filter: drop-shadow(10px -10px 10px rgb(165, 127, 255));
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+#custom-button:hover{
+  filter: drop-shadow(-10px 10px 50px aquamarine);
+}

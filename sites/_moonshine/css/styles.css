@@ -1,0 +1,135 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: transparent;
+   
+}
+
+img {
+    width: 100vw;
+    height: auto;
+}
+
+.menu {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .menu li {
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.05s * var(--i));
+    transform: rotate(0deg) translate(100px);
+} */
+
+.menu li {
+position: absolute;
+list-style: none;
+transform-origin: 100px;
+transition: 0.5s;
+transition-delay: calc(0.05s * var(--i));
+transform: rotate(0deg) translate(100px);
+/* filter: url(#gooey); */
+left: -39px;
+top: 70px;
+}
+
+.menu.active li {
+    transform: rotate(calc(360deg / 7 * var(--i)));
+    margin-left: 35px;
+    margin-top: 0px;
+}
+
+.toggle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    cursor: pointer;
+    background: palegoldenrod;
+    border-radius: 50%;
+}
+
+.moon svg path{
+    fill: orange;
+}
+.moon:hover svg path{
+    fill: pink;
+}
+
+
+/* RANDOMIZE BUTTON */
+
+.button-container {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    bottom: 0vh;
+    width: 100vw;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    width: 3vw;
+    height: auto;
+  }
+  
+  .buttons img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+  }
+  
+  /* Initial mix-blend-mode */
+  .buttons {
+    mix-blend-mode: normal;
+    opacity: 0.3;
+  }
+  
+  /* Change mix-blend-mode on hover */
+  .buttons:hover {
+    mix-blend-mode: difference; /* Change to your desired blend mode */
+    opacity: 1;
+  }
+  
+  #home-button{
+    filter: drop-shadow(10px -10px 30px rgb(165, 127, 255));
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  #home-button:hover{
+    filter: drop-shadow(-30px 30px 30px rgb(225, 255, 127));
+  }
+  
+  #custom-button {
+    filter: drop-shadow(10px -10px 10px rgb(165, 127, 255));
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  #custom-button:hover{
+    filter: drop-shadow(-10px 10px 50px aquamarine);
+  }
+  

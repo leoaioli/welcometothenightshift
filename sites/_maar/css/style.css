@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+
+#maar{
+  position: absolute;
+  width: 100vw;
+  height: auto;
+}
+
+#maar img{
+  width: 100vw;
+  height:100vh;
+}
+
+ /* RANDOMIZE BUTTON */
+
+ .button-container {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    bottom: 0vh;
+    width: 100vw;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    width: 3vw;
+    height: auto;
+  }
+  
+  .buttons img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+  }
+  
+  /* Initial mix-blend-mode */
+  .buttons {
+    mix-blend-mode: normal;
+    opacity: 0.3;
+  }
+  
+  /* Change mix-blend-mode on hover */
+  .buttons:hover {
+    mix-blend-mode: difference; /* Change to your desired blend mode */
+    opacity: 1;
+  }
+  
+  #home-button{
+    filter: drop-shadow(10px -10px 30px rgb(165, 127, 255));
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  #home-button:hover{
+    filter: drop-shadow(-30px 30px 30px rgb(225, 255, 127));
+  }
+  
+  #custom-button {
+    filter: drop-shadow(10px -10px 10px rgb(165, 127, 255));
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  #custom-button:hover{
+    filter: drop-shadow(-10px 10px 50px aquamarine);
+  }
+  

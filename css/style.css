@@ -1,0 +1,429 @@
+@font-face {
+  font-family: "TimesNewArial";
+  src: url("../fonts/TimesNewArialVF.woff2");
+  font-variation-settings: "srff" 100, "ital" 0, "wght" 70;
+}
+
+
+
+html,
+body {
+  background: transparent;
+  z-index: 1;
+  font-family: "TimesNewArial", sans-serif;
+  font-variation-settings: "srff" 0, "ital" 0, "wght" 70;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+a,
+button,
+input,
+label {
+  cursor: pointer;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#question-container{
+  position: relative;
+  z-index: 99;
+  padding: 20px;
+}
+
+#question-container img{
+  width: 2vw; 
+  height: auto;
+  cursor: pointer;
+}
+
+
+#logo-container{
+  position: absolute;
+  z-index: 10;
+  top: 15vh;
+  left: 15vw;
+  width: 70vw;
+  height: auto;
+  filter: drop-shadow(20px -20px 40px aquamarine);
+  /* pointer-events: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Set the height to the full viewport height, adjust as needed */
+  transition: 0.3s ease-in-out;
+  mix-blend-mode: none;
+}
+
+#logo-container img{
+  width: 70vw;
+  height: auto;
+}
+
+#logo-container:hover{
+  filter: drop-shadow(-30px 30px 50px aquamarine);
+  mix-blend-mode: luminosity;
+}
+
+.menu-container{
+  left: 1vw;
+  top: 1vw;
+  width: 10vw;
+  height: 3vh;
+  position: fixed;
+  display: flex;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-button {
+  font-size: 50pt;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  border-radius: 0px;
+}
+
+.menu-list {
+  font-size: 50pt;
+  display: none;
+  position: fixed;
+  list-style: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+}
+
+.menu-item {
+  appearance: none;
+  outline: 0;
+  background: blue;
+  background-image: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+  cursor: pointer;
+  border:none;
+  border-radius: 3px;
+}
+
+.menu-item:hover {
+  background-color: #ecf0f1;
+}
+
+
+
+
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.saturatio{
+  transition: filter 0.7s; /* Smooth transition effect */
+}
+
+.saturatio:hover {
+  filter: saturate(600%);
+}
+
+.div1{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -2;
+  cursor: default;
+}
+
+.div2{
+  width: 35vw;
+  height: auto;
+  position: fixed;
+  left: 39.5vw;
+  bottom: -30vh;
+  z-index: 3;
+  transition: all .3s ease;
+}
+
+.div2:hover{
+  bottom: -25vh;
+}
+
+.div3{
+  width: 27vw;
+  height: auto;
+  position: fixed;
+  left: -2vw;
+  bottom: -23vh;
+  z-index: 3;
+  transition: all .3s ease;
+}
+
+.div3:hover{
+  bottom: -17vh;
+  transform: rotate(10deg);
+}
+
+.div4 {
+  width: 10vw;
+  height: auto;
+  position: fixed;
+  left: 28.2vw;
+  bottom: -21vh;
+  z-index: 3;
+  transition: all .3s ease;
+}
+
+.div4:hover{
+  bottom: -10vh;
+  transform: rotate(-5deg);
+}
+
+.div5 {
+  width: 14vw;
+  height: auto;
+  position: fixed;
+  left: 87vw;
+  bottom: -30vh;
+  z-index: 3;
+  transition: all .4s ease;
+}
+
+.div5:hover{
+  bottom: -29vh;
+  transform: rotate(5deg);
+}
+
+.div6 {
+  width: 16vw;
+  height: auto;
+  position: fixed;
+  left: 10vw;
+  bottom: -5vh;
+  z-index: 2;
+  transition: all .3s ease;
+}
+
+.div6:hover{
+  bottom: -1vh;
+}
+
+.div7 {
+  width: 20vw;
+  height: auto;
+  position: fixed;
+  left: 26vw;
+  bottom: -15vh;
+  z-index: 1;
+  transition: all .3s ease;
+}
+
+.div7:hover{
+  bottom: -10vh;
+}
+
+.div8 {
+  width: 22vw;
+  height: auto;
+  position: fixed;
+  left: 49vw;
+  bottom: -15vh;
+  z-index: 1;
+  transition: all .3s ease;
+}
+
+.div8:hover{
+  bottom: -12vh;
+}
+
+.div9 {
+  width: 15vw;
+  height: auto;
+  position: fixed;
+  left: 72vw;
+  bottom: -7vh;
+  z-index: 1;
+  transition: all .3s ease;
+}
+
+.div9:hover{
+  bottom: -3vh;
+}
+
+.div10 {
+  width: 10vw;
+  height: auto;
+  position: fixed;
+  left: 23vw;
+  bottom: 2vh;
+  z-index: 0;
+  transition: all .3s ease;
+}
+
+.div10:hover{
+  bottom: 9vh;
+  
+}
+
+.div11 {
+  width: 9vw;
+  height: auto;
+  position: fixed;
+  left: 30vw;
+  bottom: 23vh;
+  z-index: 0;
+  transition: all .3s ease;
+}
+
+.div11:hover{
+  bottom: 25vh;
+  transform: rotate(-6deg);
+}
+
+.div12{
+  width: 17vw;
+  height: auto;
+  position: fixed;
+  left: 10vw;
+  bottom: 0vh;
+  z-index: 0;
+  transition: all .3s ease;
+}
+
+.div12:hover{
+  bottom: 2vh;
+  transform: rotate(4deg);
+}
+
+.div13{
+  width: 20.5vw;
+  height: auto;
+  position: fixed;
+  left: 64vw;
+  bottom: 39vh;
+  z-index: 0;
+  transition: all .3s ease;
+}
+
+.div13:hover{
+  scale: 105%;
+}
+
+.div14{
+  width: 29vw;
+  height: auto;
+  position: fixed;
+  left: 35vw;
+  bottom: 5vh;
+  z-index: 0;
+  transition: all .3s ease;
+}
+
+.div15{
+  width: 24vw;
+  height: auto;
+  position: fixed;
+  left: 75vw;
+  bottom: 24.5vh;
+  z-index: 0;
+  transition: all .3s ease;
+}
+
+.div15:hover{
+  scale: 105%;
+}
+
+.div16{
+  width: 13vw;
+  height: auto;
+  position: fixed;
+  left: -1vw;
+  bottom: 2vh;
+  z-index: 0;
+  transition: all .3s ease;
+}
+
+.div16:hover{
+  bottom: 4vh;
+  transform: rotate(-6deg);
+}
+
+.div17{
+  width: 12vw;
+  height: auto;
+  position: fixed;
+  left: 88vw;
+  bottom: 42vh;
+  z-index: 0;
+  transition: all .3s ease;
+}
+
+.div17:hover{
+  scale: 110%;
+}
+
+.remnant1{
+  width: 12vw;
+  height: auto;
+  position: fixed;
+  left: 75vw;
+  bottom: 75vh;
+  z-index: 0;
+  transition: all .3s ease;
+}
+
+.remnant2{
+  width: 20vw;
+  height: auto;
+  position: fixed;
+  left: 30vw;
+  bottom: 35vh;
+  z-index: -1;
+  transition: all .3s ease;
+}
+
+.remnant3{
+  width: 25vw;
+  height: auto;
+  position: fixed;
+  left: 10vw;
+  bottom: 25vh;
+  z-index: -1;
+  transition: all .3s ease;
+}
+
+.remnant4{
+  width: 10vw;
+  height: auto;
+  position: fixed;
+  left: 67vw;
+  bottom: 45vh;
+  z-index: -1;
+  transition: all .3s ease;
+}
